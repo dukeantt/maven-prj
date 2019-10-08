@@ -1,12 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eb0e2fc1-8099-4c5f-8b09-1000418b3536" name="Default Changelist" comment="" />
+    <list default="true" id="eb0e2fc1-8099-4c5f-8b09-1000418b3536" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/testmaven/BTVN1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/testmaven/BTVN2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/testmaven/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testmaven/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/testmaven/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/testmaven/App.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -17,13 +33,15 @@
     </option>
   </component>
   <component name="ProjectId" id="1RbGCThqLdeau2HfnTqihc5SHeB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RunDashboard">
@@ -38,7 +56,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.BTVN2">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="testmaven.App" />
       <module name="first-prj" />
@@ -52,8 +70,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BTVN1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="testmaven.BTVN1" />
+      <module name="first-prj" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testmaven.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BTVN2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="testmaven.BTVN2" />
+      <module name="first-prj" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testmaven.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BTVN2" />
+        <item itemvalue="Application.BTVN1" />
         <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
@@ -70,11 +116,52 @@
       <updated>1569928255014</updated>
       <workItem from="1569928259697" duration="202000" />
       <workItem from="1569928500152" duration="181000" />
-      <workItem from="1569928692176" duration="2959000" />
+      <workItem from="1569928692176" duration="3585000" />
+      <workItem from="1570118496367" duration="3547000" />
+      <workItem from="1570185411398" duration="5377000" />
+      <workItem from="1570455563419" duration="952000" />
+      <workItem from="1570461177054" duration="9532000" />
+      <workItem from="1570522985313" duration="4228000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/testmaven/BTVN2.java</url>
+          <line>72</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/testmaven/BTVN2.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="productArray" language="JAVA" />
+        <watch expression="compareProducts" language="JAVA" />
+        <watch expression="compareProducts.get(i - 1).getText()" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
