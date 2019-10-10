@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -79,24 +80,60 @@ public class App {
         }
         */
         // IFRAME
-        driver.get("https://www.toolsqa.com/iframe-practice-page/");
-        WebDriverWait waitCookies = new WebDriverWait(driver, 20);
-        waitCookies.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@data-cli_action=\"accept\"]"))).click();
-        WebElement firstIf = driver.findElement(By.xpath("//iframe[@id=\"IF1\"]"));
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", firstIf);
+//        driver.get("https://www.toolsqa.com/iframe-practice-page/");
+//        WebDriverWait waitCookies = new WebDriverWait(driver, 20);
+//        waitCookies.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@data-cli_action=\"accept\"]"))).click();
+//        WebElement firstIf = driver.findElement(By.xpath("//iframe[@id=\"IF1\"]"));
+//        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", firstIf);
+//
+//        WebDriverWait waitFirstIf = new WebDriverWait(driver, 50);
+//        waitFirstIf.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//iframe[@id=\"IF1\"]")));
+//        waitFirstIf.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(firstIf));
+//        Thread.sleep(5000);
+//        try {
+//            driver.switchTo().frame(firstIf);
+//        }catch (Exception e){
+//            System.out.println(driver.getPageSource());
+//        }
+//        driver.findElement
+//                (By.xpath("//header[@class=\"header-bar\"]//ul[@class=\"sub-nav level-arrows-on\"]/li[@class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-27307\"]/a")).click();
+//        driver.findElement(By.xpath("//li[@class=\"menu-item menu-item-type-post_type menu-item-object-post menu-item-35868\"]")).click();
 
-        WebDriverWait waitFirstIf = new WebDriverWait(driver, 50);
-        waitFirstIf.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//iframe[@id=\"IF1\"]")));
-        waitFirstIf.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(firstIf));
-        Thread.sleep(5000);
-        try {
-            driver.switchTo().frame(firstIf);
-        }catch (Exception e){
-            System.out.println(driver.getPageSource());
+        //PRACTICE ACTION CLASS 1
+//        driver.get("http://demo.guru99.com/test/simple_context_menu.html");
+//        Actions action1 = new Actions(driver);
+//        WebDriverWait wait = new WebDriverWait(driver,10);
+//
+//        wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//button"))));
+//        action1.moveToElement(driver.findElement(By.xpath("//button"))).doubleClick().perform();
+//        driver.switchTo().alert().accept();
+//        driver.switchTo().defaultContent();
+//
+//        action1.moveToElement(driver.findElement(By.xpath("//span[@class=\"context-menu-one btn btn-neutral\"]"))).contextClick().perform();
+//        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//li[.//span[contains(text(),\"Quit\")]]")));
+//        action1.moveToElement(driver.findElement(By.xpath("//li[.//span[contains(text(),\"Quit\")]]"))).click().perform();
+//        driver.switchTo().alert().accept();
+
+        //PRACTICE ACTION CLASS 2
+        driver.get("http://demo.guru99.com/selenium/drag_drop.html");
+        Actions action2 = new Actions(driver);
+        WebElement bank = driver.findElement(By.xpath("//li[@class=\"block14 ui-draggable\"]/a"));
+        WebElement debitSideAcc = driver.findElement(By.xpath("//div[@id=\"shoppingCart1\"]//li[@class=\"placeholder\"]"));
+        action2.dragAndDrop(bank, debitSideAcc).perform();
+
+        WebElement sales = driver.findElement(By.xpath("//li[@class=\"block15 ui-draggable\"]/a"));
+        WebElement creditSideAcc = driver.findElement(By.xpath("//div[@id=\"shoppingCart3\"]//li"));
+        action2.dragAndDrop(sales, creditSideAcc).perform();
+
+        WebElement amount1 = driver.findElement(By.xpath("//li[@data-id=\"3\"]/preceding-sibling::li[@data-id=\"2\"]"));
+        WebElement amount2 = driver.findElement(By.xpath("//li[@data-id=\"3\"]/following-sibling::li[@data-id=\"2\"]"));
+        WebElement debitSideAmount = driver.findElement(By.xpath("//div[@id=\"shoppingCart4\"]//ol[@id=\"amt7\"]/li"));
+        WebElement creditSideAmount = driver.findElement(By.xpath("//div[@id=\"shoppingCart4\"]//ol[@id=\"amt8\"]/li"));
+        action2.dragAndDrop(amount1, debitSideAmount).perform();
+        action2.dragAndDrop(amount2, creditSideAmount).perform();
+
+        if (driver.findElement(By.xpath("//div[@class=\"table4_result\"]/a")).isDisplayed()) {
+            System.out.println("Perfect");
         }
-        driver.findElement
-                (By.xpath("//header[@class=\"header-bar\"]//ul[@class=\"sub-nav level-arrows-on\"]/li[@class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-27307\"]/a")).click();
-        driver.findElement(By.xpath("//li[@class=\"menu-item menu-item-type-post_type menu-item-object-post menu-item-35868\"]")).click();
-
     }
 }
